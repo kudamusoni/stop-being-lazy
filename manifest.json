@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Stop Being Lazy",
+    "description": "An extension to help you stop being lazy by showing you motivating quips!",
+    "version": "1.0.0",
+    "icons": {
+      "16": "public/sword.png",
+      "32": "public/sword.png",
+      "48": "public/sword.png",
+      "128": "public/sword.png"
+    },
+    "action": { "default_popup": "index.html" },
+    "host_permissions": [
+      "https://developer.chrome.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "storage",
+      "notifications",
+      "background",
+      "alarms"
+    ]
+  }
